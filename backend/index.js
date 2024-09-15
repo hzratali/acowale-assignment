@@ -5,8 +5,8 @@ require("dotenv").config();
 
 const app = express();
 
-// Define allowed origin
-const allowedOrigins = process.env.FRONTEND_URL;
+// Define allowed origins as an array
+const allowedOrigins = ["https://acowale-assign-920e4.web.app"]; // Replace with your frontend URL
 
 // CORS middleware configuration
 app.use(
